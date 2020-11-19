@@ -89,9 +89,10 @@ static Key keys[] = {
 	{ MODKEY,                       XK_minus,  setgaps,        {.i = -1 } },
 	{ MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
-	{ MODKEY,			XK_f,	   spawn, 	   SHCMD("firefox") },
-	{ MODKEY,			XK_t,      spawn, 	   SHCMD("tor_browser") },
-	{ MODKEY,			XK_b,	   spawn,	   SHCMD("brave") },
+	{ MODKEY,			XK_Print,  spawn, 	   SHCMD("flameshot gui") },
+	{ MODKEY,			XK_w,      spawn, 	   SHCMD("firefox") },
+	{ MODKEY|ShiftMask,		XK_w,	   spawn,	   SHCMD("tor_browser") },
+	{ MODKEY|ShiftMask,		XK_b,	   spawn,	   SHCMD("brave") },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
