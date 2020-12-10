@@ -95,6 +95,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_w,      spawn, 	   SHCMD("firefox -P") },
 	{ MODKEY|ShiftMask,		XK_w,	   spawn,	   SHCMD("tor_browser") },
 	{ MODKEY|ShiftMask,		XK_b,	   spawn,	   SHCMD("brave") },
+	{ MODKEY,			XK_e,	   spawn,	   SHCMD("pcmanfm") },
 	{ MODKEY,			XK_p,	   spawn,	   SHCMD("pavucontrol") },
 	{ MODKEY,			XK_grave,  spawn,	   SHCMD("~/.local/bin/emoji") },
 	TAGKEYS(                        XK_1,                      0)
