@@ -63,6 +63,7 @@ static const char *termcmd[]  = { "st", NULL };
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
+	{ MODKEY,			XK_r,	   spawn,	   SHCMD("rofi -show drun") },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY|ShiftMask,             XK_j,      rotatestack,    {.i = +1 } },
@@ -96,8 +97,9 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_w,	   spawn,	   SHCMD("tor_browser") },
 	{ MODKEY|ShiftMask,		XK_b,	   spawn,	   SHCMD("brave") },
 	{ MODKEY,			XK_e,	   spawn,	   SHCMD("pcmanfm") },
-	{ MODKEY,			XK_p,	   spawn,	   SHCMD("pavucontrol") },
+	{ MODKEY|ShiftMask,		XK_p,	   spawn,	   SHCMD("pavucontrol") },
 	{ MODKEY,			XK_grave,  spawn,	   SHCMD("~/.local/bin/emoji") },
+	{ MODKEY,			XK_p,	   spawn,	   SHCMD("keepassxc") },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
