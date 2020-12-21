@@ -1,5 +1,8 @@
 /* See LICENSE file for copyright and license details. */
 
+/* define */
+#define TERMINAL "urxvt"
+
 /* appearance */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int gappx     = 5;        /* gaps between windows */
@@ -12,7 +15,7 @@ static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#06a284";
+static const char col_cyan[]        = "#68afd7";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -100,6 +103,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_p,	   spawn,	   SHCMD("pavucontrol") },
 	{ MODKEY,			XK_grave,  spawn,	   SHCMD("~/.local/bin/emoji") },
 	{ MODKEY,			XK_p,	   spawn,	   SHCMD("keepassxc") },
+	{ MODKEY,			XK_s,	   spawn,	   SHCMD(TERMINAL " -e sar") },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
