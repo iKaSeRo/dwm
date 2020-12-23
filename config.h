@@ -5,11 +5,11 @@
 
 /* appearance */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
-static const unsigned int gappx     = 5;        /* gaps between windows */
+static const unsigned int gappx     = 12;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "MesloLGS NF:size=12", "fontawesome:size=12, JoyPixels:size=12"};
+static const char *fonts[]          = { "MesloLGS NF:size=12", "fontawesome:size=12", "JoyPixels:size=12"};
 static const char dmenufont[]       = "MesloLGS NF:size=12";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
@@ -97,7 +97,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
 	{ MODKEY,			XK_Print,  spawn, 	   SHCMD("flameshot gui") },
 	{ MODKEY,			XK_w,      spawn, 	   SHCMD("firefox -P") },
-	{ MODKEY|ShiftMask,		XK_w,	   spawn,	   SHCMD("tor_browser") },
+	{ MODKEY|ShiftMask,		XK_w,	   spawn,	   SHCMD("icecat") },
 	{ MODKEY|ShiftMask,		XK_b,	   spawn,	   SHCMD("brave") },
 	{ MODKEY,			XK_e,	   spawn,	   SHCMD("pcmanfm") },
 	{ MODKEY|ShiftMask,		XK_p,	   spawn,	   SHCMD("pavucontrol") },
