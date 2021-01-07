@@ -11,11 +11,11 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "MesloLGS NF:size=12", "fontawesome:size=12", "JoyPixels:size=12"};
 static const char dmenufont[]       = "MesloLGS NF:size=12";
-static const char col_gray1[]       = "#222222";
+static const char col_gray1[]       = "#311A33";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#68afd7";
+static const char col_cyan[]        = "#B941C8";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -99,7 +99,8 @@ static Key keys[] = {
 	{ MODKEY,			XK_w,      spawn, 	   SHCMD("firefox -P") },
 	{ MODKEY|ShiftMask,		XK_w,	   spawn,	   SHCMD("icecat") },
 	{ MODKEY|ShiftMask,		XK_b,	   spawn,	   SHCMD("brave") },
-	{ MODKEY,			XK_e,	   spawn,	   SHCMD("pcmanfm") },
+	{ MODKEY,			XK_e,	   spawn,	   SHCMD("emacs") },
+	{ MODKEY|ShiftMask,		XK_e,	   spawn,	   SHCMD("pcmanfm") },
 	{ MODKEY|ShiftMask,		XK_p,	   spawn,	   SHCMD("pavucontrol") },
 	{ MODKEY,			XK_grave,  spawn,	   SHCMD("~/.local/bin/emoji") },
 	{ MODKEY,			XK_p,	   spawn,	   SHCMD("keepassxc") },
