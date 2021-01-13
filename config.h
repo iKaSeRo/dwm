@@ -105,6 +105,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_grave,  spawn,	   SHCMD("~/.local/bin/emoji") },
 	{ MODKEY,			XK_p,	   spawn,	   SHCMD("keepassxc") },
 	{ MODKEY,			XK_s,	   spawn,	   SHCMD(TERMINAL " -e sar") },
+	{ MODKEY,			XK_v,	   spawn,	   SHCMD("virt-manager") },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
