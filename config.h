@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* define */
-#define TERMINAL "urxvt"
+#define TERMINAL "st"
 
 /* appearance */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
@@ -100,7 +100,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_w,	   spawn,	   SHCMD("icecat") },
 	{ MODKEY|ShiftMask,		XK_b,	   spawn,	   SHCMD("brave") },
 	{ MODKEY,			XK_e,	   spawn,	   SHCMD("emacs") },
-	{ MODKEY|ShiftMask,		XK_e,	   spawn,	   SHCMD("pcmanfm") },
+	{ MODKEY|ShiftMask,		XK_e,	   spawn,	   SHCMD(TERMINAL " -e vifm") },
 	{ MODKEY|ShiftMask,		XK_p,	   spawn,	   SHCMD("pavucontrol") },
 	{ MODKEY,			XK_grave,  spawn,	   SHCMD("~/.local/bin/emoji") },
 	{ MODKEY,			XK_p,	   spawn,	   SHCMD("keepassxc") },
