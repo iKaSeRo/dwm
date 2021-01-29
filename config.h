@@ -5,17 +5,17 @@
 
 /* appearance */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
-static const unsigned int gappx     = 11;        /* gaps between windows */
+static const unsigned int gappx     = 22;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Inconsolata:size=12", "fontawesome:size=12", "JoyPixels:size=12"};
-static const char dmenufont[]       = "Inconsolata:size=12";
-static const char col_gray1[]       = "#311A33";
+static const char *fonts[]          = { "Inconsolata:size=15", "fontawesome:size=15", "JoyPixels:size=15"};
+static const char dmenufont[]       = "Inconsolata:size=15";
+static const char col_gray1[]       = "#210f06";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#B941C8";
+static const char col_cyan[]        = "#fc834b";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
