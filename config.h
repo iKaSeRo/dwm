@@ -9,7 +9,7 @@ static const unsigned int gappx     = 22;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Inconsolata:size=15", "fontawesome:size=15", "JoyPixels:size=15"};
+static const char *fonts[]          = { "Inconsolata:size=15", "fontawesome:size=15", "JoyPixels:size=15", "Mona Gothic Wide:size=15"};
 static const char dmenufont[]       = "Inconsolata:size=15";
 static const char col_gray1[]       = "#1c1826";
 static const char col_gray2[]       = "#444444";
@@ -23,7 +23,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
+static const char *tags[] = { "一", "二", "三", "四", "五", "六", "七", "八", "九" };
 
 static const Rule rules[] = {
 	/* xprop(1):
