@@ -11,11 +11,11 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Inconsolata:size=15", "fontawesome:size=15", "JoyPixels:size=15"};
 static const char dmenufont[]       = "Inconsolata:size=15";
-static const char col_gray1[]       = "#210f06";
+static const char col_gray1[]       = "#1c1826";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#fc834b";
+static const char col_cyan[]        = "#c252ce";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -23,7 +23,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
+static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -96,8 +96,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
 	{ MODKEY,			XK_Print,  spawn, 	   SHCMD("flameshot gui") },
-	{ MODKEY,			XK_w,      spawn, 	   SHCMD("firefox -P") },
-	{ MODKEY|ShiftMask,		XK_w,	   spawn,	   SHCMD("icecat") },
+	{ MODKEY,			XK_w,      spawn, 	   SHCMD("librewolf -P") },
+	{ MODKEY|ShiftMask,		XK_w,	   spawn,	   SHCMD("firefox -P") },
 	{ MODKEY|ShiftMask,		XK_b,	   spawn,	   SHCMD("brave") },
 	{ MODKEY,			XK_e,	   spawn,	   SHCMD("emacs") },
 	{ MODKEY|ShiftMask,		XK_e,	   spawn,	   SHCMD(TERMINAL " -e vifm") },
